@@ -1,0 +1,21 @@
+# exorcism forces the map pack; hub removes server-delivered packs.
+mode: exorcism
+proxy-gated: true
+multiworld:
+  slots: 4
+  world-prefix: exo_room_
+  template: D:/MC/server/exorcism-template/world
+  instances: D:/MC/server/[25580] 驱魔传/plugins/ExorcismResourcePack/instances
+  tick-location: 0 0 0
+  start:
+    x: -9.5
+    y: -59.0
+    z: 118.5
+    yaw: 0.0
+    pitch: 0.0
+collection:
+  template: D:/MC/server/exorcism-collection-template/world
+  world-prefix: exo_collection_
+teamlobby:
+  template: D:/MC/server/exorcism-teamlobby-template/world
+  world-prefix: exo_teamlobby_

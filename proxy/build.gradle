@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.kaelorvyn'
+version = '1.0.0'
+
+repositories {
+    maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+}
+
+dependencies {
+    compileOnly 'com.velocitypowered:velocity-api:3.5.0-SNAPSHOT'
+    annotationProcessor 'com.velocitypowered:velocity-api:3.5.0-SNAPSHOT'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveFileName = 'ExorcismResourcePackProxy-1.0.0.jar'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,9 @@
+name: ExorcismResourcePack
+version: 1.0.0
+main: com.kaelorvyn.exorcismpack.ExorcismResourcePackPlugin
+api-version: '1.21'
+description: Forces the Exorcism resource pack and clears server packs on hub entry.
+commands:
+  kteam:
+    description: Creates or joins an Exorcism team room.
+    usage: /kteam [code|start|leave]

@@ -1,0 +1,8 @@
+{
+  "id": "exorcismresourcepackproxy",
+  "name": "ExorcismResourcePackProxy",
+  "version": "1.0.0",
+  "description": "Preloads and gates the Exorcism resource pack before server connection.",
+  "authors": ["Kaelorvyn"],
+  "main": "com.kaelorvyn.exorcismpack.proxy.ExorcismResourcePackProxy"
+}
